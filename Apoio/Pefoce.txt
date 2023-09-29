@@ -1,0 +1,31 @@
+https://www.google.com/search?q=o+m%C3%A9todo+toLocaleString&oq=o+m%C3%A9todo+toLocaleString&aqs=chrome..69i57.5052j0j1&sourceid=chrome&ie=UTF-8
+
+https://www.alura.com.br/artigos/convertendo-string-para-numero-em-javascript
+
+https://www.alura.com.br/artigos/formatando-cpf-com-ajuda-das-expressoes-regulares
+
+https://pt-br.legacy.reactjs.org/docs/thinking-in-react.html
+Windows
+	Parar o serviço do postgres.
+	Ubuntun(WSL2)
+	comando > sudo su
+	senha > 549081
+Docker
+	https://docs.docker.com/desktop/install/windows-install/
+	https://www.youtube.com/watch?v=Lgh8JgcYFwM
+	https://www.youtube.com/watch?v=ILF3gqXCtbE
+	COMANDOS:
+	Criar imagem: docker pull postgres
+	Listar imagens: docker images
+	Rodar container e exportar a porta: docker run --name 	container1 -e POSTGRES_PASSWORD=123456 -d -p 5432:5432 postgres
+	Listar conteiners: docker ps -a
+	Entrar no bash: docker exec -it ''id do container'' bash
+	Entrar no postgres: psql -U postgres
+	Criar base de dados: CREATE DATABASE banco1;
+	Sair: \q
+Postgres
+	nome do banco > banco1
+	senha > 123456
+	para sair do postgres ctrl + \
+Debeaver
+	https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbm9ZaG5fNzV6VTg3LXNBOThaNW9OMHlBZ0R3UXxBQ3Jtc0tuME5XR3k5T1RUd1ZNbmdlRWpEOWpReEVyOWw4eU5hcTNmTHRFb2tPNXpQUHo0ZE1zeWRsWV9Ec05SNlFkaGtleklmb1U3UHB3YnhtVmlLdzV4eFZLY3lPMEF5Z0NOT0tjQnc5SDI1WnQ0ektyc2E2cw&q=https%3A%2F%2Fdbeaver.io%2Fdownload%2F&v=ILF3gqXCtbE
