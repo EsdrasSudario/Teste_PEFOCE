@@ -12,7 +12,9 @@ import Profile from "./components/profile.component";
 import BoardUser from "./components/board-user.component";
 import BoardModerator from "./components/board-moderator.component";
 import BoardAdmin from "./components/board-admin.component";
-import Cliente from "./components/cliente.component"
+import Cliente from "./components/cliente.component";
+import Clientes from "./components/clientes-list.component";
+import AddCliente from "./components/add-cliente.component";
 
 class App extends Component {
   constructor(props) {
@@ -129,6 +131,9 @@ class App extends Component {
             <Route path="/mod" element={<BoardModerator />} />
             <Route path="/admin" element={<BoardAdmin />} />
             <Route path="/admin/:id" element={<Cliente/>} />
+            <Route path="/user/:id" element={<Cliente/>} />
+            <Route path="/clientes/" element={<Clientes/>} />AddCliente
+            <Route path="/add/" element={<AddCliente/>} />
           </Routes>
         </div>
       </div>

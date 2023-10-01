@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import ClienteDataService from "../services/cliente.service";
-import AuthService from "../services/auth.service";
+//import AuthService from "../services/auth.service";
 import { Link } from "react-router-dom";
 import { withRouter } from '../common/with-router';
 
@@ -155,7 +155,7 @@ class ClientesList extends Component {
                 {currentCliente.data_criacao}
               </div>
               <Link
-                to={"/clientes/" + currentCliente.id}
+                to={"/user/" + currentCliente.id}
                 className="badge badge-warning"
               >
                 Editar
