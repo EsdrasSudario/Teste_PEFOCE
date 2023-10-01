@@ -1,0 +1,28 @@
+version: '3'
+
+services:
+  postgres:
+    container_name: postgres-service
+    hostname: postgres-service
+    image: postgres:12.7
+    restart: always
+    environment:
+      POSTGRES_USER: emissao_rg_root
+      POSTGRES_PASSWORD: reg.dev.123!
+      POSTGRES_DB: clientes
+      TZ: GMT-3
+    ports:
+      - "19300:5432"
+    volumes:
+      - db-data-emissao:/var/lib/postgresql/data
+      - ./ddl.sql:/docker-entrypoint-initdb.d/1.sql:ro
+    networks:
+      - datanodes-erg-network
+
+volumes:
+  db-data-emissao:
+
+networks:
+  datanodes-erg-network:
+    driver: bridge
+
