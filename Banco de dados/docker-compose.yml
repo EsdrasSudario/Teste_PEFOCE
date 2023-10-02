@@ -7,9 +7,9 @@ services:
     image: postgres:12.7
     restart: always
     environment:
-      POSTGRES_USER: emissao_rg_root
-      POSTGRES_PASSWORD: reg.dev.123!
-      POSTGRES_DB: clientes
+      POSTGRES_USER: postgres2
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: postgres
       TZ: GMT-3
     ports:
       - "19300:5432"
